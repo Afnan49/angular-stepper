@@ -1,0 +1,68 @@
+<div class="mt-4">
+  <form #form="ngForm">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            name="Password"
+            ngModel
+            required
+          />
+          <label for="Password">Password</label>
+        </div>
+        <!-- ===================================================================================== -->
+        <div class="form-floating mb-3">
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Repeat"
+            name="Repeat"
+            ngModel
+            required
+          />
+          <label for="Repeat Password">Repeat Password</label>
+        </div>
+      </div>
+      <!-- ******************************************************************************************** -->
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Recovery Email"
+            name="Recovery Emai"
+            ngModel
+            required
+          />
+          <label for="Recovery Email">Recovery Email</label>
+        </div>
+        <!-- ===================================================================================== -->
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Recovery Phone"
+            name="Recovery Phone"
+            ngModel
+            required
+          />
+          <label for="Recovery Phone">Recovery Phone</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between flex-row mb-5 mt-4">
+      <button class="btn btn-outline-primary" cdkStepperPrevious>
+        <i class="fa fa-angle-left me-3"></i>Back To contact</button
+      ><button
+        class="btn btn-outline-primary"
+        cdkStepperNext
+        [disabled]="form.invalid"
+      >
+        Submit form<i class="fa fa-angle-right ms-3"></i>
+      </button>
+    </div>
+  </form>
+</div>

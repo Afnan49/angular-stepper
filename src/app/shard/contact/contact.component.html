@@ -1,0 +1,69 @@
+<div class="mt-4">
+  <form #form="ngForm">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="State"
+            name="State"
+            ngModel
+            required
+          />
+          <label for="State">State</label>
+        </div>
+        <!-- ===================================================================================== -->
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="City"
+            name="City"
+            ngModel
+            required
+          />
+          <label for="City">City</label>
+        </div>
+      </div>
+      <!-- ******************************************************************************************** -->
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Street"
+            name="Street"
+            ngModel
+            required
+          />
+          <label for="Street">Street</label>
+        </div>
+        <!-- ===================================================================================== -->
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="House No"
+            name="HouseNo"
+            ngModel
+            required
+          />
+          <label for="House">House No</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-between flex-row mb-5 mt-4">
+      <button class="btn btn-outline-primary" cdkStepperPrevious>
+        <i class="fa fa-angle-left me-3"></i>Back To Informaton
+      </button>
+      <button
+        class="btn btn-outline-primary"
+        cdkStepperNext
+        [disabled]="form.invalid"
+      >
+        Go to security<i class="fa fa-angle-right ms-3"></i>
+      </button>
+    </div>
+  </form>
+</div>

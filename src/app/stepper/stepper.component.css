@@ -1,0 +1,18 @@
+ul {
+  background-color: rgb(73, 72, 72);
+}
+ul li:nth-of-type(1) {
+  clip-path: polygon(0 0, 75% 0%, 100% 50%, 75% 100%, 0 100%, 0% 50%);
+}
+ul li:not(:nth-of-type(1)) {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+ul li:nth-of-type(4) {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+}
+button.nav-link {
+  color: #fff;
+}
+.active {
+  background-color: crimson !important;
+}

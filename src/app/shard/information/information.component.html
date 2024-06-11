@@ -1,0 +1,64 @@
+<div class="mt-4">
+  <form #form="ngForm">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First Name"
+            name="firstName"
+            ngModel
+            required
+          />
+          <label for="FirstName">First Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last Name"
+            name="lastName"
+            ngModel
+            required
+          />
+          <label for="LastName">Last Name</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            placeholder="Email"
+            name="email"
+            ngModel
+            required
+            email
+          />
+          <label for="Email">Email</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Phone"
+            name="phone"
+            ngModel
+            required
+          />
+          <label for="Phone">Phone</label>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex justify-content-end flex-row mb-5 mt-4">
+      <button
+        class="btn btn-outline-primary"
+        cdkStepperNext
+        [disabled]="form.invalid"
+      >
+        Go to contact<i class="fa fa-angle-right ms-3"></i>
+      </button>
+    </div>
+  </form>
+</div>
